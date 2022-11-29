@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+   <div class="spinn">
+    <div class="spinner" id="spinner"></div>
+  </div>
+    <header id="header">
+      <p class="titulosHeader" id="popularMovies">Popular Movies</p>
+      <p class="titulosHeader" id="upComing">Upcoming</p>
+      <p class="titulosHeader" id="top_rated">Top rated</p>
+      
+      <select id="select-lang">
+        <option value="es-ES" >Español</option>
+        <option value="en-EN"selected>English</option>
+      </select>
+    </header>
+    
+    <div class="container">
+      <div id="movies"></div>
+    </div>
+
+  
+    
+    <script type="module" src="scripts/main.js"></script>
+  </body>
+</html>

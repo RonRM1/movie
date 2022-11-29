@@ -1,0 +1,95 @@
+body {
+  margin: 0px;
+}
+
+header {
+  height: 50px;
+  width: cover;
+  background-color: #391e4d;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 100px;
+  margin-bottom: 20px;
+  color: #dbdcef;
+  cursor: pointer;
+}
+img {
+  border-radius: 5%;
+  width: 185px;
+  height: 278px;
+  cursor: pointer;
+}
+a:hover > img {
+  /* height: 280px;
+  width: 190px; */
+  opacity: 60%;
+  scale: 1.05;
+}
+#popularMovies {
+  margin-left: 10px;
+}
+
+#average {
+  border: 4px solid;
+  /* border-radius: 50%; */
+  width: 25px;
+  background-color: #391e4d;
+  color: #dbdcef;
+  font-size: 12px;
+ 
+}
+
+
+.spinn {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.spinner {
+  width: 45px;
+  height: 45px;
+  margin-top: 400px;
+  border-radius: 50%;
+  background: repeating-conic-gradient(#391e4d 0 90deg, #dbdcef 0 180deg);
+  animation: spinner-a78xsi 1s infinite linear;
+  display: none;
+  position: absolute;
+}
+
+@keyframes spinner-a78xsi {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+/* .spinner {
+  display: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 8px solid;
+  border-color: #dbdcef;
+  border-right-color:#391e4d;
+  animation: spinner-d3wgkg 1s infinite linear;
+  position: absolute;
+  margin-top: 200px;
+}
+
+@keyframes spinner-d3wgkg {
+  to {
+    transform: rotate(1turn);
+  }
+} */
+
+#movies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: space-between;
+}
+
+.movies {
+  width: 185px;
+  text-align: center;
+}
